@@ -16,4 +16,11 @@ void Game_class::Start()
 {
 	m_Score = 0;
 	m_TimePlayed = 0;
+
+	bool finished = false;
+
+	while (!finished)
+	{
+
+	}
 }
