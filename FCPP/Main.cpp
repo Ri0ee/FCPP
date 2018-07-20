@@ -1,15 +1,13 @@
 #include "UI.h"
 #include "Game.h"
-#include "Windows.h"
+
 #include <iostream>
 
 int main()
 {
-	Game_class* Game = new Game_class(10);
+	Game_class* Game = new Game_class();
+	Game->Start();
 	delete Game;
 
-
-
-	system("pause");
 	return 0;
 }

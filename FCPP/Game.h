@@ -3,9 +3,12 @@
 class Game_class
 {
 public:
-	Game_class(int InitScore);
+	Game_class();
 	~Game_class();
 
-	int m_Score;
-};
+	void Start();
 
+private:
+	int m_Score;
+	int m_TimePlayed;
+};

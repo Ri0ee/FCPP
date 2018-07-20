@@ -1,9 +1,9 @@
 #include "Game.h"
 #include <iostream>
 
-Game_class::Game_class(int InitScore)
+Game_class::Game_class()
 {
-	m_Score = InitScore;
+	
 }
 
 Game_class::~Game_class()
@@ -11,3 +11,7 @@ Game_class::~Game_class()
 
 }
 	
+void Game_class::Start()
+{
+
+}
