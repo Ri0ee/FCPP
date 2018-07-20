@@ -7,4 +7,5 @@ public:
 	~UI_class();
 	
 	void DrawUI();
+
 };
