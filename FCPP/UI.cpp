@@ -15,3 +15,8 @@ void UI_class::DrawUI()
 {
 
 }
+
+void UI_class::ClearScreen()
+{
+
+}

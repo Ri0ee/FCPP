@@ -21,6 +21,6 @@ void Game_class::Start()
 
 	while (!finished)
 	{
-
+		
 	}
 }

@@ -7,5 +7,5 @@ public:
 	~UI_class();
 	
 	void DrawUI();
-
+	void ClearScreen();
 };
