@@ -19,6 +19,6 @@ int main()
 
 	delete Game;
 	delete UI;
-
+	
 	return 0;
 }
