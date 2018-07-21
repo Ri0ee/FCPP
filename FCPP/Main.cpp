@@ -1,6 +1,7 @@
 #include "UI.h"
 #include "Game.h"
 
+
 #include <iostream>
 
 int main()
@@ -12,6 +13,6 @@ int main()
 
 	delete Game;
 	delete UI;
-
+	
 	return 0;
 }
