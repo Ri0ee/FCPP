@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Windows.h"
 
+
 using namespace std;
 
 UI_class::UI_class()
@@ -34,7 +35,7 @@ void UI_class::ClearRow(int X, int Y, int rowWidth)
 	// Fill the row with spaces
 	if (!FillConsoleOutputCharacter(
 		hStdOut,
-		(TCHAR) ' ',
+		(TCHAR) 'A',
 		rowWidth,
 		homeCoords,
 		&count
@@ -70,8 +71,6 @@ void UI_class::SetFont()
 	cfi.FontWeight = FW_NORMAL;
 	std::wcscpy(cfi.FaceName, L"Lucida Console"); // Choose your font
 	SetCurrentConsoleFontEx(GetStdHandle(STD_OUTPUT_HANDLE), FALSE, &cfi);
-
-	std::cout << "Font: Consolas, Size: 24\n";
 }
 
 void UI_class::TextColor(int color)
