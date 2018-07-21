@@ -88,7 +88,7 @@ Collision_struct Game_class::Collision(Block_struct colliding_block)
 
 					return tempCollision;
 				}
-					
+
 				if (colliding_block.m_Y >= 20)
 				{
 					tempCollision.m_State = true;
@@ -113,7 +113,7 @@ Collision_struct Game_class::Collision(Block_struct colliding_block)
 					return tempCollision;
 				}
 			}
-				
+
 	return tempCollision;
 }
 
@@ -130,34 +130,34 @@ Block_struct Game_class::CreateRandomBlock(int random_number)
 
 	if (random_number > 4 || random_number < 1)
 		return tempBlock;
-	
+
 	if (random_number == 1)
 	{
 		tempBlock.m_W = 3;
 		tempBlock.m_H = 2;
 		tempBlock.m_X = 4;
 		tempBlock.m_Y = 0;
-		
-										 tempBlock.m_Structure[0][1] = 1;
+
+		tempBlock.m_Structure[0][1] = 1;
 		tempBlock.m_Structure[1][0] = 1; tempBlock.m_Structure[1][1] = 1; tempBlock.m_Structure[1][2] = 1;
 
 		return tempBlock;
 	}
 
-	if (random_number == 2) 
+	if (random_number == 2)
 	{
 		tempBlock.m_W = 3;
 		tempBlock.m_H = 2;
 		tempBlock.m_X = 4;
 		tempBlock.m_Y = 0;
 
-																		  tempBlock.m_Structure[0][2] = 1;
+		tempBlock.m_Structure[0][2] = 1;
 		tempBlock.m_Structure[1][0] = 1; tempBlock.m_Structure[1][1] = 1; tempBlock.m_Structure[1][2] = 1;
 
 		return tempBlock;
 	}
 
-	if (random_number == 3) 
+	if (random_number == 3)
 	{
 		tempBlock.m_W = 2;
 		tempBlock.m_H = 2;
@@ -165,7 +165,7 @@ Block_struct Game_class::CreateRandomBlock(int random_number)
 		tempBlock.m_Y = 0;
 
 		tempBlock.m_Structure[0][0] = 1; tempBlock.m_Structure[0][1] = 1;
-		tempBlock.m_Structure[1][0] = 1; tempBlock.m_Structure[1][1] = 1; 
+		tempBlock.m_Structure[1][0] = 1; tempBlock.m_Structure[1][1] = 1;
 
 		return tempBlock;
 	}
